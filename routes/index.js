@@ -39,8 +39,8 @@ router.use("/admin", studentsTableBackedRoute);
 router.use("/admin/donation", donationRoutes);
 router.use("/auth/donation", donationRoutes);
 
-router.use("/auth/posts", postRoutes);
-router.use("/admin/posts", postRoutes);
+// router.use("/auth/posts", postRoutes);
+// router.use("/admin/posts", postRoutes);
 
 router.use("/auth/exam-categories", examCategoryRoutes);
 router.use("/auth/subcategories", subExamTypeRoutes);
@@ -51,17 +51,17 @@ router.use("/auth/question-papers", questionPaperRoutes);
 router.use("/admin/question-papers", questionPaperRoutes);
 
 router.use("/auth/subjects", subjectRoutes);
-router.use("/auth/groups", groupRoutes);
+// router.use("/auth/groups", groupRoutes);
 
-router.use("/auth/leaderboard", leaderboardRoutes);
+// router.use("/auth/leaderboard", leaderboardRoutes);
 
 router.use("/auth/customtest", customTestRoutes);
 
 router.use("/auth/papers", allPaperRoutes);
 router.use("/admin/papers", allPaperRoutes);
 
-router.use("/auth/feedback", feedbackRoutes);
-router.use("/admin/feedback", feedbackRoutes);
+// router.use("/auth/feedback", feedbackRoutes);
+// router.use("/admin/feedback", feedbackRoutes);
 
 router.use("/auth/abc", examDetailWithYearRoute);
 
