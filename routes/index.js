@@ -26,29 +26,29 @@ const subscriptionRoutes = require("./subscriptionRoutes");
 
 // Define routes
 router.use("/auth", userRoutes);
-router.use("/auth/coupons", couponRoutes);
-router.use("/admin/coupons", couponRoutes);
+// router.use("/auth/coupons", couponRoutes);
+// router.use("/admin/coupons", couponRoutes);
 
-router.use("/admin", adminRoutes);
+// router.use("/admin", adminRoutes);
 router.use("/auth/variable", constantsRoutes);
 
-router.use("/auth/policy", privacyPolicyRoute);
-router.use("/auth/deleteaccount", deletionRoutes);
+// router.use("/auth/policy", privacyPolicyRoute);
+// router.use("/auth/deleteaccount", deletionRoutes);
 
-router.use("/admin", studentsTableBackedRoute);
-router.use("/admin/donation", donationRoutes);
-router.use("/auth/donation", donationRoutes);
+// router.use("/admin", studentsTableBackedRoute);
+// router.use("/admin/donation", donationRoutes);
+// router.use("/auth/donation", donationRoutes);
 
 // router.use("/auth/posts", postRoutes);
 // router.use("/admin/posts", postRoutes);
 
 router.use("/auth/exam-categories", examCategoryRoutes);
 router.use("/auth/subcategories", subExamTypeRoutes);
-router.use("/admin/subcategories", subExamTypeRoutes);
+// router.use("/admin/subcategories", subExamTypeRoutes);
 
 router.use("/auth/years", examYearRoutes);
 router.use("/auth/question-papers", questionPaperRoutes);
-router.use("/admin/question-papers", questionPaperRoutes);
+// router.use("/admin/question-papers", questionPaperRoutes);
 
 router.use("/auth/subjects", subjectRoutes);
 // router.use("/auth/groups", groupRoutes);
@@ -58,13 +58,13 @@ router.use("/auth/subjects", subjectRoutes);
 router.use("/auth/customtest", customTestRoutes);
 
 router.use("/auth/papers", allPaperRoutes);
-router.use("/admin/papers", allPaperRoutes);
+// router.use("/admin/papers", allPaperRoutes);
 
 // router.use("/auth/feedback", feedbackRoutes);
 // router.use("/admin/feedback", feedbackRoutes);
 
 router.use("/auth/abc", examDetailWithYearRoute);
 
-router.use("/auth/subscription", subscriptionRoutes);
+// router.use("/auth/subscription", subscriptionRoutes);
 
 module.exports = router;
